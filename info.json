@@ -1,0 +1,9 @@
+{
+  "author": "yvonnexchen",
+  "demoUrl": "http://jdc.jd.com/demo/ambient/little_thing/",
+  "title": "little_thing",
+  "github": "https://github.com/o2team-ambient/little_thing",
+  "demoSnippet": "{{__snippet__}}",
+  "controlUrl": "{{__control__}}",
+  "configUrl": "{{__config__}}"
+}
