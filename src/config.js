@@ -3,5 +3,5 @@ window[O2_AMBIENT_CONFIG] = {
   loop: true,
   style: 'red',
   size: 'big',
-  color: [212, 54, 54]
+  color: [212, 54, 54] 
 }

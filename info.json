@@ -2,7 +2,7 @@
   "author": "yvonnexchen",
   "demoUrl": "http://jdc.jd.com/demo/ambient/little_thing/",
   "title": "little_thing",
-  "github": "https://github.com/o2team-ambient/little_thing",
+  "github": "https://github.com/o2team-ambient/little_thing", 
   "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-little_thing.css?t=1532661417000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\" id=\"o2team_ambient_main\"></div>\n  <!-- E 主体内容 --><script src=\"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js\"></script><script src=\"//storage.jd.com/ambient/bundle-little_thing.js?t=1532661417000\"></script>",
   "controlUrl": "//storage.jd.com/ambient/control-little_thing.js?t=1532661417000",
   "configUrl": "//storage.jd.com/ambient/config-little_thing.js?t=1532661417000"
