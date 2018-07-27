@@ -21,6 +21,7 @@ let controlInit = () => {
       this.message = '小元素'
       this.backgroundColor = '#ffffff'
       this.style = 'red'
+      this.objectColor = [212, 54, 54]
       this.size = 'big'
       this.loop = true
     }
@@ -41,11 +42,22 @@ let controlInit = () => {
       const config = this.config
       const otherConfig = this.otherConfig
       const gui = new dat.GUI()
-      gui.addCallbackFunc(this.resetCanvas.bind(this))
-      
+      const COLOR = {
+        red: [212, 54, 54],
+        yellow: [228, 175, 40],
+        green: [39, 231, 40],
+        cyan: [71, 238, 209],
+        blue: [34, 142, 241],
+        purple: [222, 85, 208]
+      }
       gui.add(otherConfig, 'message').name('配置面板')
       gui.add(otherConfig, 'loop').name('循环').onFinishChange(val => {
         window[O2_AMBIENT_CONFIG].loop = val
+        this.resetCanvas()
+      })
+      gui.addCallbackFunc(this.resetCanvas.bind(this))
+      let colorCtrl = gui.addColor(otherConfig, 'objectColor').name('颜色').onFinishChange(val => {        
+        window[O2_AMBIENT_CONFIG].color = val
         this.resetCanvas()
       })
       gui.add(otherConfig, 'style', {
@@ -59,9 +71,11 @@ let controlInit = () => {
         .name('样式')
         .onFinishChange(val => {
           window[O2_AMBIENT_CONFIG].style = val
+          otherConfig.objectColor = COLOR[val]
+          window[O2_AMBIENT_CONFIG].color = COLOR[val]
+          colorCtrl.updateDisplay()
           this.resetCanvas()
-        })
-
+        })  
       gui.add(otherConfig, 'size', {
         '大': 'big',
         '中': 'middle',
@@ -73,7 +87,7 @@ let controlInit = () => {
           this.resetCanvas()
         })
 
-      this.isShowController && !this.isAmbientPlat && gui.addColor(otherConfig, 'backgroundColor').name('背景色(仅演示)').onFinishChange(val => {
+      this.isShowController && !this.isAmbientPlat && gui.addColor(otherConfig, 'backgroundColor').name('背景色(仅演示)').onFinishChange(val => {        
         this.setBackgroundColor(val)
       })
       this.gui = gui
