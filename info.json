@@ -1,10 +1,11 @@
 {
   "author": "yvonnexchen",
   "demoUrl": "http://jdc.jd.com/demo/ambient/little_thing/",
+  "miniDemoUrl": "http://jdc.jd.com/demo/ambient/little_thing/index_demo.html",
   "title": "little_thing",
   "ambName": "运动墨迹",
   "github": "https://github.com/o2team-ambient/little_thing",
-  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-little_thing.css?t=1547714131000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\" id=\"o2team_ambient_main\"></div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-little_thing.js?t=1547714131000\"></script>",
-  "controlUrl": "//storage.jd.com/ambient/control-little_thing.js?t=1547714131000",
-  "configUrl": "//storage.jd.com/ambient/config-little_thing.js?t=1547714131000"
+  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-little_thing.css?t=1552529567000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\" id=\"o2team_ambient_main\"></div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-little_thing.js?t=1552529567000\"></script>",
+  "controlUrl": "//storage.jd.com/ambient/control-little_thing.js?t=1552529567000",
+  "configUrl": "//storage.jd.com/ambient/config-little_thing.js?t=1552529567000"
 }
