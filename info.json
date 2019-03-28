@@ -1,7 +1,7 @@
 {
   "author": "yvonnexchen",
-  "demoUrl": "http://jdc.jd.com/demo/ambient/little_thing/",
-  "miniDemoUrl": "http://jdc.jd.com/demo/ambient/little_thing/index_demo.html",
+  "demoUrl": "//o2team-ambient.github.io/little_thing/dist/",
+  "miniDemoUrl": "//o2team-ambient.github.io/little_thing/dist/index_demo.html",
   "title": "little_thing",
   "ambName": "运动墨迹",
   "github": "https://github.com/o2team-ambient/little_thing",
