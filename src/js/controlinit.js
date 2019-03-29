@@ -42,14 +42,7 @@ let controlInit = () => {
       const config = this.config
       const otherConfig = this.otherConfig
       const gui = new dat.GUI()
-      const COLOR = {
-        red: [212, 54, 54],
-        yellow: [228, 175, 40],
-        green: [39, 231, 40],
-        cyan: [71, 238, 209],
-        blue: [34, 142, 241],
-        purple: [222, 85, 208]
-      }
+      // const COLOR = window[O2_AMBIENT_CONFIG].color
       gui.add(otherConfig, 'message').name('配置面板')
       gui.add(otherConfig, 'loop').name('循环').onFinishChange(val => {
         window[O2_AMBIENT_CONFIG].loop = val
@@ -61,18 +54,17 @@ let controlInit = () => {
         this.resetCanvas()
       })
       gui.add(otherConfig, 'style', {
-        '红色笔刷': 'red',
-        '黄色笔刷': 'yellow',
-        '绿色笔刷': 'green',
-        '青色泡沫': 'cyan',
-        '蓝色泼墨': 'blue',
-        '紫色笔刷': 'purple'
+        '圆形移动墨迹': 'red',
+        '左侧烟雾': 'yellow',
+        '大爆炸': 'cyan',
+        '泼墨': 'blue',
+        '右侧烟雾': 'purple'
       })
         .name('样式')
         .onFinishChange(val => {
           window[O2_AMBIENT_CONFIG].style = val
-          otherConfig.objectColor = COLOR[val]
-          window[O2_AMBIENT_CONFIG].color = COLOR[val]
+          // otherConfig.objectColor = COLOR
+          // window[O2_AMBIENT_CONFIG].color = COLOR[val]
           colorCtrl.updateDisplay()
           this.resetCanvas()
         })  

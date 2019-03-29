@@ -25,6 +25,7 @@ export default class LittleThing {
 
   init () {
     this.create(red)
+    this.updateColor()
   }
 
   create () {  
@@ -70,7 +71,7 @@ export default class LittleThing {
     if (!rgba instanceof Array) return
     const __toMatrixNum = (num) => {
       let total = 255
-      return (num/total).toFixed(2) * 1
+      return (num / total).toFixed(2) * 1
     }
 
     let r = __toMatrixNum(rgba[0])
