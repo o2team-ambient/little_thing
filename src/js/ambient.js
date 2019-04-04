@@ -8,7 +8,13 @@ import {
 import LittleThing from './littlething'
 
 // 判断是否可点，被点中则隐藏
-const wrapper = document.querySelector('.o2team_ambient_main')
+let wrapper = document.querySelector('.o2team_ambient_main')
+if (!wrapper) {
+  wrapper = document.createElement('div')
+  wrapper.setAttribute('class', 'o2team_ambient_main')
+  wrapper.setAttribute('id', 'o2team_ambient_main')
+  document.body.insertAdjacentElement('beforeend', wrapper)
+}
 wrapper.addEventListener('click', () => {
   wrapper.style.display = 'none'
 })
