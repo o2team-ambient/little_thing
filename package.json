@@ -26,7 +26,6 @@
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-sass": "^1.2.2",
-    "rollup-plugin-scss": "^1.0.1",
     "rollup-plugin-style": "^0.1.0",
     "rollup-plugin-uglify": "^6.0.2"
   }
