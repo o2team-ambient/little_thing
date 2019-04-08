@@ -21,7 +21,7 @@ export default [{
     commonjs(),
     babel({
       comments: true,
-      exclude: 'node_modules/**'
+      exclude: ['node_modules/**', 'src/js/utils/bodymovin.js']
     }),
     json({
       // All JSON files will be parsed by default,
@@ -59,7 +59,7 @@ export default [{
     commonjs(),
     babel({
       presets: [["@babel/preset-env"]],
-      exclude: 'node_modules/**'
+      exclude: ['node_modules/**', 'src/js/utils/bodymovin.js']
     }),
     scss(),
     json({

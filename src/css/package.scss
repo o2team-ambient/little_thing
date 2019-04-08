@@ -2,4 +2,11 @@
  * 页面的基础样式，包括样式重置
  */
 @import "base";
-*{display: block}
+
+.o2team_ambient_main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,4 +1,18 @@
 import './css/package.scss'
 
-import './js/ambient'
+import { O2_AMBIENT_CONFIG } from './js/utils/const'
+
+import bodymovin from './js/utils/bodymovin'
+import initAmbient from './js/ambient'
 import './config'
+
+window.bodymovin = bodymovin
+
+export default function (opts) {
+  opts && Object.keys(window[O2_AMBIENT_CONFIG]).forEach(key => {
+    if (typeof opts[key] === 'undefined') return
+    window[O2_AMBIENT_CONFIG][key] = opts[key]
+  })
+
+  initAmbient()
+}

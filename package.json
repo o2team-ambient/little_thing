@@ -1,6 +1,6 @@
 {
   "name": "@o2team/ambient-little_thing",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "夸克动效库-墨迹动效",
   "main": "dist/index.min.js",
   "scripts": {
