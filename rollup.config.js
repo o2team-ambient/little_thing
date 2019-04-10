@@ -2,10 +2,8 @@ import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
 import { uglify } from 'rollup-plugin-uglify'
-import scss from 'rollup-plugin-sass'
-// import scss from 'rollup-plugin-scss'
+import postcss from 'rollup-plugin-postcss'
 import json from 'rollup-plugin-json'
-import style from 'rollup-plugin-style'
 
 const name = 'ATLittleThing'
 
@@ -43,8 +41,7 @@ export default [{
       // generate a named export for every property of the JSON object
       namedExports: true // Default: true
     }),
-    scss(),
-    style()
+    postcss()
   ]
 }, {
   input: 'src/rollup_index.js',
@@ -61,7 +58,6 @@ export default [{
       presets: [["@babel/preset-env"]],
       exclude: ['node_modules/**', 'src/js/utils/bodymovin.js']
     }),
-    scss(),
     json({
       // All JSON files will be parsed by default,
       // but you can also specifically include/exclude files
@@ -82,8 +78,7 @@ export default [{
       // generate a named export for every property of the JSON object
       namedExports: true // Default: true
     }),
-    scss(),
-    style(),
+    postcss(),
     uglify()
   ]
 }]

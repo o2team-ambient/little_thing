@@ -1,3 +1,4 @@
+import './css/base.scss'
 import './css/package.scss'
 
 import bodymovin from './js/utils/bodymovin'
