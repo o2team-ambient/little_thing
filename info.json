@@ -5,9 +5,9 @@
   "title": "little_thing",
   "ambName": "运动墨迹",
   "github": "https://github.com/o2team-ambient/little_thing",
-  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-little_thing.css?t=1565786831000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\" id=\"o2team_ambient_main\"></div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-little_thing.js?t=1565786831000\"></script>",
-  "controlUrl": "//storage.jd.com/ambient/control-little_thing.js?t=1565786831000",
-  "configUrl": "//storage.jd.com/ambient/config-little_thing.js?t=1565786831000",
+  "demoSnippet": "<link href=\"//storage.jd.com/ambient/styles-little_thing.css?t=1566461916000\" rel=\"stylesheet\"></link><!-- S 主体内容 -->\n  <div class=\"o2team_ambient_main\" id=\"o2team_ambient_main\"></div>\n  <!-- E 主体内容 --><script src=\"//storage.jd.com/ambient/bundle-little_thing.js?t=1566461916000\"></script>",
+  "controlUrl": "//storage.jd.com/ambient/control-little_thing.js?t=1566461916000",
+  "configUrl": "//storage.jd.com/ambient/config-little_thing.js?t=1566461916000",
   "placeholderImg": "//storage.jd.com/ambient/little_thing_placeholder.png?t=1554256256000",
   "gifImg": "//storage.jd.com/ambient/little_thing_motion.gif?t=1553866143000",
   "spriteImg": "//storage.jd.com/ambient/little_thing_sprite.png?t=1554256256000"

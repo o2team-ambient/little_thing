@@ -20,6 +20,14 @@ try {
   console.log(e) 
 }
 
-Report.init({})
-Report.processPV()
+const handleReport = () => {
+  Report.init({})
+  Report.processPV()
+}
+
+if (typeof window.XView === 'undefined') {
+  handleReport()
+} else {
+  window.handleReport = handleReport
+}
   
